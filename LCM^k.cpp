@@ -36,8 +36,11 @@ int main(){
 			scanf("%d",&a);
 			temp = getFactorization(a);
             for(auto it=temp.begin(); it!=temp.end(); it++){
-                if(m[it->first] < it->second)
-                    m[it->first] = it->second;
+                if(m[it->first] < it->second){
+			m[it->first] = it->second;
+			cout<<it->second;
+		}
+                    
             }
 		}
         for(auto it=m.begin(); it!=m.end(); it++){
